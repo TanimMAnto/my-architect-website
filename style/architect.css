@@ -117,7 +117,52 @@ main > section{
 #list-1{
   font-weight: 500;
 }
-/* some fact */
+
+
+/* feature team start */
+.features{
+  gap: 140px;
+}
+
+
+ #feature-section-title{
+  border-left: 5px solid #ff900e;
+  padding-left: 20px ;
+ }
+
+ .feature-card{
+    padding: 30px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+  border-radius: 8px;
+ }
+
+ .feature-card .feature-title{
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
+ }
+ #badge{
+  padding: 45px 42px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-left: -90px;
+  margin-top: -100px;
+ }
+
+
+
+ #year{
+  font-size: 4rem;
+  font-weight: 700;
+ }
+ .feature-imged img{
+  width: 100%;
+
+ }
+
+/* /* some fact * */
 .fact-card{
   border: 1px solid #ff900e;
   width: 240px;
@@ -172,11 +217,11 @@ main > section{
 /* responsive */
 
 @media screen and (max-width: 625px){
-   .navbar, .nav-links, .teams{
+   .navbar, .nav-links, .teams, .features{
       flex-direction: column;
    }
 
-   .team-img-container, .facts-container, .sopnsor-company{
+   .team-img-container, .facts-container, .sopnsor-company,{
     grid-template-columns: repeat(1, 1fr);
    }
 .facts-container, .sopnsor-company{
@@ -188,12 +233,17 @@ main > section{
   .our-features{
     margin-left: 20px;
   }
+
+  #badge{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
   
 }
 
 /* medium */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .teams{
+  .teams ,{
     flex-direction: column;
   }
   .our-team{
